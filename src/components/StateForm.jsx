@@ -1,4 +1,4 @@
-export default function StateForm({ stateQuery, setStateQuery, stateData, setStateData }) {
+export default function StateForm({ stateQuery, setStateQuery, setStateData }) {
     // Fetch data from Census API
     const CENSUS_API_URL = 'https://api.census.gov/data/2019/acs/acsse?get=NAME,K200101_001E,K201904_001E,K200103_001E,K200101_002E,K200101_003E,K200201_002E,K200201_003E,K200201_004E,K200201_005E,K200201_006E,K200301_003E,K200201_007E,K200201_001E&for=state:*';
 
