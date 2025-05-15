@@ -40,7 +40,7 @@ export default function StateData({ stateData }) {
         <div>
             <h2>The vibe at {yourState}:</h2>
             <p>Total population: {totalPopulation}</p>
-            <p>Median income: {medianIncome}</p>
+            <p>Median income: ${medianIncome}</p>
             <p>Median age: {medianAge} years</p>
             <h3>Gender Breakdown:</h3>
             <ul>
@@ -59,8 +59,8 @@ export default function StateData({ stateData }) {
                 <li>Hispanic or Latino: {hispanicPercent}%</li>
             </ul>
             <p className="data-note">
-                Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.
-                Individuals may identify as both Hispanic and any race.
+                Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.<br />
+                Individuals may identify as both Hispanic and any race.<br />
                 Percentages may overlap or not total 100%.
             </p>
         </div>
