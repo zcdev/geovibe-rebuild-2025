@@ -27,13 +27,14 @@ export default function StateData({ stateData }) {
 
     const raceBreakdown = [
         { label: 'White', value: percent(whitePopulation, totalRaceData) },
-        { label: 'Black', value: percent(blackPopulation, totalRaceData) },
-        { label: 'Native American', value: percent(nativeAmericanPopulation, totalRaceData) },
+        { label: 'Black or African American', value: percent(blackPopulation, totalRaceData) },
+        { label: 'American Indian and Alaska Native', value: percent(nativeAmericanPopulation, totalRaceData) },
         { label: 'Asian', value: percent(asianPopulation, totalRaceData) },
-        { label: 'Pacific Islander', value: percent(pacificIslanderPopulation, totalRaceData) },
-        { label: 'Hispanic', value: percent(hispanicPopulation, totalRaceData) },
-        { label: 'Others', value: percent(otherRaces, totalRaceData) }
+        { label: 'Native Hawaiian and Other Pacific Islander', value: percent(pacificIslanderPopulation, totalRaceData) },
+        { label: 'Other races', value: percent(otherRaces, totalRaceData) }
     ];
+
+    const hispanicPercent = percent(hispanicPopulation, totalPopulation)
 
     return (
         <div>
@@ -41,18 +42,27 @@ export default function StateData({ stateData }) {
             <p>Total population: {totalPopulation}</p>
             <p>Median income: {medianIncome}</p>
             <p>Median age: {medianAge} years</p>
-            <p>Gender Breakdown:</p>
+            <h3>Gender Breakdown:</h3>
             <ul>
                 {genderBreakdown.map((item) => (
                     <li key={item.label}>{item.label}: {item.value}%</li>
                 ))}
             </ul>
-            <p>Race data:</p>
+            <h3>Race Breakdown:</h3>
             <ul>
                 {raceBreakdown.map((item) => (
                     <li key={item.label}>{item.label}: {item.value}%<br /></li>
                 ))}
             </ul>
+            <h3>Ethnicity:</h3>
+            <ul>
+                <li>Hispanic or Latino: {hispanicPercent}%</li>
+            </ul>
+            <p className="data-note">
+                Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.
+                Individuals may identify as both Hispanic and any race.
+                Percentages may overlap or not total 100%.
+            </p>
         </div>
     )
 }
