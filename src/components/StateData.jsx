@@ -37,32 +37,50 @@ export default function StateData({ stateData }) {
     const hispanicPercent = percent(hispanicPopulation, totalPopulation)
 
     return (
-        <div>
-            <h2>The vibe at {yourState}:</h2>
-            <p>Total population: {totalPopulation}</p>
-            <p>Median income: ${medianIncome}</p>
-            <p>Median age: {medianAge} years</p>
-            <h3>Gender Breakdown:</h3>
-            <ul>
-                {genderBreakdown.map((item) => (
-                    <li key={item.label}>{item.label}: {item.value}%</li>
-                ))}
-            </ul>
-            <h3>Race Breakdown:</h3>
-            <ul>
-                {raceBreakdown.map((item) => (
-                    <li key={item.label}>{item.label}: {item.value}%<br /></li>
-                ))}
-            </ul>
-            <h3>Ethnicity:</h3>
-            <ul>
-                <li>Hispanic or Latino: {hispanicPercent}%</li>
-            </ul>
-            <p className="data-note">
-                Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.<br />
-                Individuals may identify as both Hispanic and any race.<br />
-                Percentages may overlap or not total 100%.
-            </p>
+        <div className="state-summary">
+            <section>
+                <h2>The vibe at {yourState}:</h2>
+            </section>
+
+            <section>
+                <h3>General Info</h3>
+                <ul>
+                    <li>Total population: {totalPopulation}</li>
+                    <li>Median income: ${medianIncome}</li>
+                    <li>Median age: {medianAge} years</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Gender Breakdown</h3>
+                <ul>
+                    {genderBreakdown.map((item) => (
+                        <li key={item.label}>{item.label}: {item.value}%</li>
+                    ))}
+                </ul>
+            </section>
+
+            <section>
+                <h3>Race Breakdown</h3>
+                <ul>
+                    {raceBreakdown.map((item) => (
+                        <li key={item.label}>{item.label}: {item.value}%</li>
+                    ))}
+                </ul>
+            </section>
+
+            <section>
+                <h3>Ethnicity:</h3>
+                <ul>
+                    <li>Hispanic or Latino: {hispanicPercent}%</li>
+                </ul>
+            </section>
+
+            <aside className="data-note" aria-label="Demographic data explanation">
+                <p>Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.</p>
+                <p>Individuals may identify as both Hispanic and any race.</p>
+                <p>Percentages may overlap or not total 100%.</p>
+            </aside>
         </div>
     )
 }
