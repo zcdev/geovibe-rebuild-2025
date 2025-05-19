@@ -1,5 +1,5 @@
 .state-summary {
-  max-width: 600px;
+  max-width: 660px;
   margin: 2rem auto;
   padding: 1.5rem;
   background-color: #fdfdfd;
@@ -21,7 +21,7 @@
 .state-summary h3 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
-  color: #555;
+  color: #333;
 }
 
 .state-summary ul {
