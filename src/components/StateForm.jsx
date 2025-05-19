@@ -16,12 +16,13 @@ export default function StateForm({ stateQuery, setStateQuery, setStateData }) {
         console.log('User submitted:', stateQuery);
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="state-form" onSubmit={handleSubmit}>
             <input
+                placeholder="Enter your state"
+                aria-label="Enter your state"
                 type="text"
                 value={stateQuery}
                 onChange={(event) => setStateQuery(event.target.value)}
-                placeholder="Enter your state"
             />
             <button type="submit">Submit</button>
         </form>
