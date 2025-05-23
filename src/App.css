@@ -1,8 +1,33 @@
-.state-summary {
+.app-style {
+  width: 100%;
+  padding: 2rem;
+  height: auto;
+}
+
+.app-style main {
   max-width: 660px;
-  margin: 2rem auto;
+  padding: 1.5rem 2.5rem 0.5rem;
+  background-color: rgba(157, 161, 170, 0.85);
+  border-radius: 8px;
+}
+
+.app-style header h1 {
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.app-style header p {
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+.state-summary {
+  margin: 2rem auto 0;
   padding: 1.5rem;
-  background-color: #fdfdfd;
+  background-color: rgba(254, 254, 254, 0.9);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
@@ -57,25 +82,41 @@
 }
 
 .state-form input[type="text"] {
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 220px;
+  max-width: 220px;
 }
 
 .state-form button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #444;
+  font-weight: 700;
+  background-color: #000;
   color: white;
-  border: 1px solid #444;
+  border: 1px solid #fff;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 .state-form button:hover {
-  background-color: #666;
-  border: 1px solid #666;
+  background-color: #555;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 480px) {
+  .app-style, .app-style main{
+    padding: 1rem;
+  }
+
+  .app-style header h1 {
+    font-size: 3em;
+  }
+
+  .app-style header p {
+    font-size: 1.5em;
+    line-height: normal;
+  }
 }

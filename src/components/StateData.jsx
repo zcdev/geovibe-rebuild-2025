@@ -39,7 +39,7 @@ export default function StateData({ stateData }) {
     return (
         <div className="state-summary">
             <section>
-                <h2>The vibe at {yourState}:</h2>
+                <h2>The <em>vibe</em> at {yourState}:</h2>
             </section>
 
             <section>
