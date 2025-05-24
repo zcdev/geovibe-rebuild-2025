@@ -8,6 +8,8 @@ export default function App() {
   const [stateQuery, setStateQuery] = useState('')
   // Stores the full matched state row
   const [stateData, setStateData] = useState(null)
+  // Error handling
+  const [error, setError] = useState('');
 
   return (
     <div className="app-style">
@@ -20,8 +22,10 @@ export default function App() {
           stateQuery={stateQuery}
           setStateQuery={setStateQuery}
           setStateData={setStateData}
+          setError={setError}
         />
       </main>
+      {error && <p role="alert" className="error-message">{error}</p>}
       {stateData && <StateData stateData={stateData} />}
     </div>
   )
