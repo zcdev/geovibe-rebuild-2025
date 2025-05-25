@@ -17,7 +17,7 @@ export default function StateData({ stateData }) {
         totalRaceData
     ] = stateData
 
-    // Calculates percentage
+    // Calculate percentage
     const percent = (num, total) => ((Number(num) / Number(total)) * 100).toFixed(2);
 
     const genderBreakdown = [

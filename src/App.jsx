@@ -5,9 +5,9 @@ import StateData from './components/StateData'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function App() {
-  // Controlled input for capturing user state query
+  // Capture user state query by controlled input
   const [stateQuery, setStateQuery] = useState('')
-  // Stores the full matched state row
+  // Store the matched state row from data table
   const [stateData, setStateData] = useState(null)
   // Error handling
   const [error, setError] = useState('');

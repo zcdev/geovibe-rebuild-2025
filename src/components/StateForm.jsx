@@ -1,17 +1,10 @@
 export default function StateForm({ stateQuery, setStateQuery, setStateData, setError }) {
-    // List of US states for autocomplete and autofill
+    // List of all 50 US states for autocomplete and autofill
     const US_STATES = [
-        "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
-        "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
-        "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",
-        "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska",
-        "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina",
-        "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
-        "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
-        "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
+        "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana","Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
     ]
 
-    // US Census 2019 API endpoints
+    // US Census 2019 ACS data GET request URL
     const CENSUS_API_URL = 'https://api.census.gov/data/2019/acs/acsse?get=NAME,K200101_001E,K201904_001E,K200103_001E,K200101_002E,K200101_003E,K200201_002E,K200201_003E,K200201_004E,K200201_005E,K200201_006E,K200301_003E,K200201_007E,K200201_001E&for=state:*'
 
     // Handle form submission
@@ -28,7 +21,7 @@ export default function StateForm({ stateQuery, setStateQuery, setStateData, set
             }
 
             const data = await response.json()
-            const states = data.slice(1) // Remove headers
+            const states = data.slice(1) // Remove headers at data tables
             const match = states.find(row => row[0].toLowerCase() === stateQuery.toLowerCase().trim())
 
             // Check user input and handle error messages
