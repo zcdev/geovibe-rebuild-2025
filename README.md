@@ -8,8 +8,7 @@ GeoVibe lets you explore U.S. Census data to better understand the population, i
 
 ## Overview
 
-GeoVibe is a single-page application that displays demographic data from the U.S. Census Bureau.  
-Users can enter the name of any U.S. state at the form to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
+GeoVibe is a single-page application that displays demographic data from the U.S. Census Bureau. Users can enter the name of any U.S. state at the form to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
 
 The project is a complete rebuild of an [earlier JavaScript-based version](https://github.com/zcdev/GeoVibe-old), modernized now using React and Vite. It’s designed to be simple, responsive, and accessible to make geodemographical insights approachable for everyday users.
 
