@@ -20,7 +20,7 @@ The custom background artwork was also designed specifically for this app to ref
 <br />Enter the name of any U.S. state at the form to retrieve data instantly
 
 🌐 **Census API integration**
-<br />Retrieves official 2019 American Community Survey (ACS) data in real time from the U.S. Census Bureau
+<br />Retrieves official 2023 American Community Survey (ACS) data in real time from the U.S. Census Bureau
 
 📊 **Key demographic insights**
 <br />Total population, median income, age, gender, and race/ethnicity breakdowns
@@ -44,7 +44,7 @@ The custom background artwork was also designed specifically for this app to ref
 - **JavaScript (ES6+)** – App logic and interactivity
 - **HTML5** - For semantic structure and datalist
 - **CSS3** – Custom styles, responsive layout, and theming
-- **U.S. Census Bureau API** – ACS 2019 demographic data source
+- **U.S. Census Bureau API** – ACS 2023 demographic data source
 - **Vercel** – Hosting and deployment
 - **Sketch App** - For vector graphic illustrations
 - **Photoshop** - For app background image production
@@ -68,7 +68,7 @@ To run GeoVibe locally:
 
 ## Acknowledgements
 
-- **[U.S. Census Bureau API](https://www.census.gov/data.html)** – American Community Survey (2019) data
+- **[U.S. Census Bureau API](https://www.census.gov/data.html)** – American Community Survey (2023) data
 - **[Vecteezy.com](https://www.vecteezy.com)** – Resource for the vector graphic assets
 - **[OpenAI's ChatGPT](https://chatgpt.com)** – Assisted with design feedback, code reviews, best practices, and copywriting
 
