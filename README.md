@@ -73,4 +73,4 @@ To run GeoVibe locally:
 - **Vecteezy.com** – Resource for the vector graphic assets
 - **OpenAI's ChatGPT** – Assisted with design feedback, code reviews, best practices, and copywriting
 
-Created by ZCDEV — Designed, built, and deployed with ❤️‍🔥
+Created by ZCDEV — Designed, developed, and deployed with ❤️‍🔥
