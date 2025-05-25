@@ -9,16 +9,16 @@ GeoVibe lets you explore U.S. Census data to better understand the population, i
 ## Overview
 
 GeoVibe is a single-page application that displays demographic data from the U.S. Census Bureau.  
-Users can enter any U.S. state to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
+Users can enter the name of any U.S. state to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
 
-The project is a complete rebuild of an earlier JavaScript-based version — now modernized using React and Vite. It’s designed to be simple, responsive, and accessible — making geodemographic insights approachable for everyday users.
+The project is a complete rebuild of an [earlier JavaScript-based version](https://github.com/zcdev/GeoVibe-old), modernized now using React and Vite. It’s designed to be simple, responsive, and accessible to make geodemographical insights approachable for everyday users.
 
-The custom background illustration was also created specifically for this app to reflect themes of diversity, community, and geography.
+The custom background artwork was also designed specifically for this app to reflect the theme of diversity, community, and geography.
 
 ## Features
 
 🔍 **State-based input with autocomplete**
-<br />Enter any U.S. state to retrieve data instantly
+<br />Enter the name of any U.S. state to retrieve data instantly
 
 🌐 **Census API integration**
 <br />Retrieves official 2019 American Community Survey (ACS) data in real time from the U.S. Census Bureau
@@ -27,16 +27,16 @@ The custom background illustration was also created specifically for this app to
 <br />Total population, median income, age, gender, and race/ethnicity breakdowns
 
 🎨 **Custom background artwork**
-<br />Designed to highlight themes of community and diversity
+<br />Designed to reflect the theme of community and diversity
 
 🌙 **Dark mode friendly**
 <br />Adapts to system preferences for improved accessibility and eye comfort
 
 📱 **Responsive & accessible design**
-<br />Optimized for desktop and mobile with keyboard-friendly forms
+<br />Optimized for desktop and mobile with keyboard-friendly form
 
 ⚠️ **Error handling**
-<br />Gracefully notifies users of bad input or fetch issues
+<br />Gracefully notifies users of invalid input or fetch issues
 
 ## Tech Stack & Creative Tools
 
@@ -65,12 +65,12 @@ To run GeoVibe locally:
 
 4. Visit http://localhost:5173 in your browser
 
-⚠️ Requires Node.js v18+ and internet connection to fetch data from the U.S. Census API.
+⚠️ Requires Node.js v18+ and Internet connection to fetch data from the U.S. Census API.
 
 ## Acknowledgements
 
-- **U.S. Census Bureau API** – American Community Survey (2019) data
-- **Vecteezy.com** – Resource for the vector graphic assets
-- **OpenAI's ChatGPT** – Assisted with design feedback, code reviews, best practices, and copywriting
+- **[U.S. Census Bureau API](https://www.census.gov/data.html)** – American Community Survey (2019) data
+- **[Vecteezy.com](https://www.vecteezy.com)** – Resource for the vector graphic assets
+- **[OpenAI's ChatGPT](https://chatgpt.com)** – Assisted with design feedback, code reviews, best practices, and copywriting
 
 Created by ZCDEV — Designed, developed, and deployed with ❤️‍🔥
