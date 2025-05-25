@@ -70,7 +70,7 @@ export default function StateData({ stateData }) {
             </section>
 
             <section>
-                <h3>Ethnicity:</h3>
+                <h3>Ethnicity</h3>
                 <ul>
                     <li>Hispanic or Latino: {hispanicPercent}%</li>
                 </ul>
