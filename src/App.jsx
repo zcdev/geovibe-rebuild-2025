@@ -3,6 +3,7 @@ import './App.css'
 import StateForm from './components/StateForm'
 import StateData from './components/StateData'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from '@vercel/analytics/react'
 
 export default function App() {
   // Capture user state query by controlled input
@@ -29,6 +30,7 @@ export default function App() {
       {error && <p role="alert" className="error-message">{error}</p>}
       {stateData && <StateData stateData={stateData} />}
       <SpeedInsights />
+      <Analytics />
     </div>
   )
 }
