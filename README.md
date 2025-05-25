@@ -9,7 +9,7 @@ GeoVibe lets you explore U.S. Census data to better understand the population, i
 ## Overview
 
 GeoVibe is a single-page application that displays demographic data from the U.S. Census Bureau.  
-Users can enter the name of any U.S. state to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
+Users can enter the name of any U.S. state at the form to view statistics on population, median income, age distribution, gender breakdown, and racial diversity.
 
 The project is a complete rebuild of an [earlier JavaScript-based version](https://github.com/zcdev/GeoVibe-old), modernized now using React and Vite. It’s designed to be simple, responsive, and accessible to make geodemographical insights approachable for everyday users.
 
@@ -18,7 +18,7 @@ The custom background artwork was also designed specifically for this app to ref
 ## Features
 
 🔍 **State-based input with autocomplete**
-<br />Enter the name of any U.S. state to retrieve data instantly
+<br />Enter the name of any U.S. state at the form to retrieve data instantly
 
 🌐 **Census API integration**
 <br />Retrieves official 2019 American Community Survey (ACS) data in real time from the U.S. Census Bureau
@@ -27,10 +27,10 @@ The custom background artwork was also designed specifically for this app to ref
 <br />Total population, median income, age, gender, and race/ethnicity breakdowns
 
 🎨 **Custom background artwork**
-<br />Designed to reflect the theme of community and diversity
+<br />Designed to reflect the theme of community, diversity, and geography
 
 🌙 **Dark mode friendly**
-<br />Adapts to system preferences for improved accessibility and eye comfort
+<br />Adapts to system preferences for improved accessibility with eye comfort
 
 📱 **Responsive & accessible design**
 <br />Optimized for desktop and mobile with keyboard-friendly form
