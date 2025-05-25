@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import StateForm from './components/StateForm'
 import StateData from './components/StateData'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function App() {
   // Controlled input for capturing user state query
@@ -27,6 +28,7 @@ export default function App() {
       </main>
       {error && <p role="alert" className="error-message">{error}</p>}
       {stateData && <StateData stateData={stateData} />}
+      <SpeedInsights />
     </div>
   )
 }
