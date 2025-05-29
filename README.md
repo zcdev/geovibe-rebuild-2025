@@ -66,6 +66,14 @@ To run GeoVibe locally:
 
 ⚠️ Requires Node.js v18+ and Internet connection to fetch data from the U.S. Census API.
 
+## Metrics & Privacy
+
+GeoVibe uses Vercel Web Analytics and Speed Insights to help monitor app performance and user behavior.
+
+No personal data is collected.  
+No cookies are used.  
+Only anonymous, aggregate usage information is tracked — strictly for improving accessibility and user experience.
+
 ## Acknowledgements
 
 - **[U.S. Census Bureau API](https://www.census.gov/data.html)** – American Community Survey (2023) data

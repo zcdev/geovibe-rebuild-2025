@@ -16,6 +16,7 @@ export default function App() {
   return (
     <div className="app-style">
       <main>
+      <div className="form-card">
         <header>
           <h1>GeoVibe</h1>
           <p>Getting a sense of the people around you.</p>
@@ -26,9 +27,14 @@ export default function App() {
           setStateData={setStateData}
           setError={setError}
         />
-      </main>
+      </div>
       {error && <p role="alert" className="error-message">{error}</p>}
       {stateData && <StateData stateData={stateData} />}
+      </main>
+      {stateData &&
+        <footer>
+          <small>This app collects anonymous usage data to help improve performance and accessibility.</small>
+        </footer>}
       <SpeedInsights />
       <Analytics />
     </div>

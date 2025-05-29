@@ -76,11 +76,11 @@ export default function StateData({ stateData }) {
                 </ul>
             </section>
 
-            <aside className="data-note" aria-label="Demographic data explanation">
+            <section className="data-note" aria-label="Demographic data explanation">
                 <p>Note: The U.S. Census defines "Hispanic or Latino" as an ethnicity, not a race.</p>
                 <p>Individuals may identify as both Hispanic and any race.</p>
                 <p>Percentages may overlap or not total 100%.</p>
-            </aside>
+            </section>
         </div>
     )
 }

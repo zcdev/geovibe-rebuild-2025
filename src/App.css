@@ -4,21 +4,21 @@
   height: auto;
 }
 
-.app-style main {
+.form-card {
   max-width: 660px;
   padding: 1.5rem 2.5rem 0.5rem;
   background-color: rgba(157, 161, 170, 0.85);
   border-radius: 8px;
 }
 
-.app-style header h1 {
+.form-card header h1 {
   font-size: 4em;
   font-weight: 500;
   line-height: 1.1;
   color: #fff;
 }
 
-.app-style header p {
+.form-card header p {
   color: #fff;
   font-size: 1.7em;
   font-weight: 400;
@@ -116,6 +116,13 @@
   border-left: 4px solid #b00020;
   border-radius: 4px;
   font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: #9da1aa;
 }
 
 @media (max-width: 600px) {
