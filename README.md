@@ -68,11 +68,9 @@ To run GeoVibe locally:
 
 ## Metrics & Privacy
 
-GeoVibe uses Vercel Web Analytics and Speed Insights to help monitor app performance and user behavior.
+GeoVibe uses Vercel Web Analytics and Speed Insights to monitor performance and user interaction trends.
 
-No personal data is collected.  
-No cookies are used.  
-Only anonymous, aggregate usage information is tracked — strictly for improving accessibility and user experience.
+No cookies are used and no personal information is collected, only anonymous usage data is tracked to help improve GeoVibe's accessibility and user experience.
 
 ## Acknowledgements
 
